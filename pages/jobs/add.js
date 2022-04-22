@@ -7,7 +7,10 @@ const add = () => {
     <div className="md:grid md:grid-cols-3 md:gap-6">
       <div className="md:col-span-1">
         <div className="px-4 sm:px-0">
+
+        <iframe className="airtable-embed" src="https://airtable.com/embed/shrgKFAVls3w1j1SO?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
           <h3 className="text-lg font-medium leading-6 text-white">Profile</h3>
+
           <p className="mt-1 text-sm text-neutral-00">
             This information will be displayed publicly so be careful what you share.
           </p>

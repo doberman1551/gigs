@@ -36,7 +36,7 @@ const JobCard = () => {
                         </div>
                         <div class="w-full">
                         <p tabindex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Category</p>
-                        <p tabindex="0" class="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category}</p>
+                        <p tabindex="0" class="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category.data.attributes.name}</p>
                         </div>
                         
                             </div>

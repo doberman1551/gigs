@@ -28,9 +28,9 @@ export default function Search({jobs}) {
       <div className="container mx-auto max-w-7xl">
       <SearchBar/>
       </div>
-      <h1>Search results for "{router.query.term}"</h1>
+      
       <div className="container mx-auto max-w-7xl">
-
+      <p className="text-xl py-2">Search results for "{router.query.term}"</p>
       <div className="container mx-auto flex  items-stretch justify-between">
       <div>{jobs.data.map((job) => (
         <FeaturedJobs key={job.id} job={job} />

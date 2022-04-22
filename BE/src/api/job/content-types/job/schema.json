@@ -18,15 +18,6 @@
     "description": {
       "type": "richtext"
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Developer",
-        "Marketing",
-        "Community",
-        "Business"
-      ]
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -55,6 +46,12 @@
     },
     "featured": {
       "type": "boolean"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "jobs"
     }
   }
 }

@@ -31,7 +31,7 @@ export default function Home({jobs}) {
       <div className="container mx-auto md:flex  items-stretch justify-between">
       <div>{jobs.data.map((job) => (
       
-        <FeaturedJobs key={job.id} job={job} />
+        <FeaturedJobs key={job.id} job={job}  />
     ))}
       </div> 
       <SideJobCard/>
@@ -57,7 +57,7 @@ export default function Home({jobs}) {
 }
 export async function getServerSideProps() {
 
-  const jobRes = await fetch(`${API_URL}/jobs?populate=*`)
+  const jobRes = await fetch(`${API_URL}/jobs?populate=*&sort=featured:desc&sort=publishedAt:desc`)
   const jobs=await jobRes.json()
 
 return{

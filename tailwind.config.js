@@ -10,10 +10,14 @@ module.exports = {
         primary:"#fd3e81",
         secondary:"#23C9FF  ", 
         bluebg:"#8D86C9", 
-        bluebg2:"#23C9FF"
+        bluebg2:"#23C9FF",
+        gradient1:"#7000FF",
+        gradient2:"#AE2727",
+        babypowder:"#FFFFFC"
 
       }
     },
+    
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),("daisyui")],
 }
