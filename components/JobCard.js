@@ -29,14 +29,14 @@ const JobCard = () => {
       </Link>
       <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
       <div class="w-full">
-                        <p tabindex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
-                        <p tabindex="0" class="focus:outline-none text-base  text-white mt-3 md:mt-5"> {job.attributes.type}</p>
+                        <p tabindex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
+                        <p tabindex="0" className="focus:outline-none text-base  text-white mt-3 md:mt-5"> {job.attributes.type}</p>
 
                         
                         </div>
                         <div class="w-full">
-                        <p tabindex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Category</p>
-                        <p tabindex="0" class="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category.data.attributes.name}</p>
+                        <p tabindex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Category</p>
+                        <p tabindex="0" className="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category.data.attributes.name}</p>
                         </div>
                         
                             </div>

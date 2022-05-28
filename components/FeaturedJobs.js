@@ -42,14 +42,14 @@ const FeaturedJobs = ({job}) => {
 
   <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
       <div class="w-full">
-                        <p tabindex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
-                        <p tabindex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
+                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
+                        <p tabIndex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
 
                         
                         </div>
                         <div class="w-full">
-                        <p tabindex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 pt-1 ">Category</p>
-                        <p tabindex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.category.data.attributes.name} </p>
+                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 pt-1 ">Category</p>
+                        <p tabIndex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.category.data.attributes.name} </p>
                         </div>
                         
                                           
@@ -71,7 +71,7 @@ const FeaturedJobs = ({job}) => {
         stroke-width="2"
       >
         <path
-          stroke-linecap="round"
+          strokeLinecap="round"
           stroke-linejoin="round"
           d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
         />

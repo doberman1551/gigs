@@ -3,7 +3,7 @@ import BottomJobCard from '../../components/BottomJobCard'
 
 const index = () => {
   return (
-    <section className="bg-background pt-4">
+    <section clasName="bg-background pt-4">
     <div className="max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
       <div
         className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center"
@@ -151,20 +151,20 @@ Fill the form and list your skils and desired opps            </p>
       </div>
 
       
-<div class="relative py-16 bg-transparent ">  
-    <div class="relative container m-auto px-6 text-neutral-200 md:px-12">
-        <div class="grid lg:grid-cols-2 gap-6 md:w-8/12 md:mx-auto lg:w-full">
-            <div class="group bg-transparent rounded-xl px-8 py-12 space-y-6 text-center">
+<div clasName="relative py-16 bg-transparent ">  
+    <div clasName="relative container m-auto px-6 text-neutral-200 md:px-12">
+        <div clasName="grid lg:grid-cols-2 gap-6 md:w-8/12 md:mx-auto lg:w-full">
+            <div clasName="group bg-transparent rounded-xl px-8 py-12 space-y-6 text-center">
              
-                <h3 class="text-2xl font-semibold text-neutral-100">For Service Providers</h3>
+                <h3 clasName="text-2xl font-semibold text-neutral-100">For Service Providers</h3>
                 <p>Save time in prospecting by having some opportunities offered directly.No cost involved</p>
 
-                <a href="#" class="relative flex justify-center items-center h-10 w-10 mx-auto 
+                <a href="#" clasName="relative flex justify-center items-center h-10 w-10 mx-auto 
                                    before:absolute before:inset-0 before:border before:border-graybg before:rounded-full before:transition before:duration-300 group-hover:before:scale-125">
-                    <span class="text-primary">
+                    <span clasName="text-primary">
 
                     <svg
-              className="w-5 h-5"
+              clasNameName="w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -181,17 +181,17 @@ Fill the form and list your skils and desired opps            </p>
                     </span>
                 </a>
             </div>
-            <div class="group  rounded-xl px-8 py-12 space-y-6 text-center">
+            <div clasName="group  rounded-xl px-8 py-12 space-y-6 text-center">
               
-                <h3 class="text-2xl font-semibold text-neutral-100  ">For Projects/Companies </h3>
+                <h3 clasName="text-2xl font-semibold text-neutral-100  ">For Projects/Companies </h3>
                 <p>Post your gig/job requirements and get talent profiles to choose from directly.Available only with <strong>premium </strong> gig postings.</p>
                 
-                <a href="#" class="relative flex justify-center items-center h-10 w-10 mx-auto 
+                <a href="#" clasName="relative flex justify-center items-center h-10 w-10 mx-auto 
                                    before:absolute before:inset-0 before:border before:border-graybg before:rounded-full before:transition before:duration-300 group-hover:before:scale-125 shadow-sm">
-                    <span class="text-primary flex justify-center">
+                    <span clasName="text-primary flex justify-center">
 
                     <svg
-              className="w-5 h-5 "
+              clasNameName="w-5 h-5 "
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
