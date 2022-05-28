@@ -15,7 +15,9 @@ module.exports = {
         gradient2:"#AE2727",
         babypowder:"#FFFFFC"
 
-      }
+      },
+     
+      
     },
     
   },

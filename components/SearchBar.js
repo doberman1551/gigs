@@ -16,9 +16,9 @@ const SearchBar = () => {
 <form onSubmit={handleSubmit} className="w-full my-8">
                         <div className="relative flex p-1 rounded-full bg-graybg border border-graybg shadow-md md:p-2 md:h-16 text-black">
                            
-                            <input value={term}  onChange={(e)=>setTerm(e.target.value)}  placeholder="Your favorite food" class="w-full p-4 rounded-full" type="text"/>
+                            <input value={term}  onChange={(e)=>setTerm(e.target.value)}  placeholder="What you are good at?" class="w-full p-4 rounded-full" type="text"/>
                             <button type="submit"  title="Start buying" className="ml-auto py-3 px-6 rounded-full text-center transition bg-primary focus:from-red-400 md:px-12">
-                                <span class="hidden text-white font-semibold md:block">
+                                <span className="hidden text-white font-semibold md:block">
                                     Search
                                 </span>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 mx-auto text-neutral-100 md:hidden" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">

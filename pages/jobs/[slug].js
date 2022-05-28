@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Navbar from '../../components/Navbar'
 import Image from 'next/image'
 import { FaBriefcase, FaKeyboard } from 'react-icons/fa';
+import {GiReceiveMoney} from 'react-icons/gi'
 import ReactMarkdown from 'react-markdown'
 import { marked } from 'marked';
 import Link from 'next/dist/client/link'
@@ -16,7 +17,6 @@ const JobPage = ({job}) => {
     const jobinput= job.data[0].attributes.description
   return (
     <>
-      <Navbar/>
       <main className="bg-background">
       <section className=" py-16 bg-background">
           <div className="container mx-auto px-4 ">
@@ -53,20 +53,48 @@ const JobPage = ({job}) => {
                     </div>
                   
                   </div>
-             
                   <div className="w-full lg:w-4/12 px-4  lg:order-3 lg:text-right lg:self-center">
+                 
+                    <div className=" flex justify-center py-2 px-3 mt-4  sm:mt-0">
+                      <button
+                        className="bg-primary active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                        type="button"
+                        style={{ transition: "all .15s ease" }}
+                      >
+                        Apply
+                      </button>
+                   </div>
+                  
+                  
                   </div>
                
                   <div className="w-full lg:w-4/12 px-4 lg:order-1">
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
+                     <Link href={`${job.data[0].attributes.Twitter}`}>
+                     <a target="_blank">
                       <div className="mr-4 p-3 text-center">
-                      <Image src="/images/twitter.svg" 
+
+                      <Image 
+                  src={
+                    job.data[0].attributes.Twitter
+                      ? '/images/twitter.svg'
+                      : 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
+                  
+               }
+                  
                          width={32}
                         height={32} />
                        
                       </div>
+                      </a>
+                      </Link>
                       <div className="mr-4 p-3 text-center">
-                        <Image src='/images/discord.svg' 
+                        <Image src={
+                    job.data[0].attributes.discord
+                      ? '/images/discord.svg'
+                      : 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
+                  
+               }
                          width={32}
                         height={32} />
                        
@@ -87,11 +115,13 @@ const JobPage = ({job}) => {
                   </h3>
                   <div className="text-sm leading-normal mt-0 mb-2 px-2 text-neutral-400 font-bold uppercase flex justify-center 	align-items: center">
           
-                    <FaBriefcase   className="mx-4"  color="#23C9FF"/>
-                    {job.data[0].attributes.type}
-                    <FaKeyboard/>
+                    <FaBriefcase   className="mx-2 h-4 w-4"  color="#23C9FF"/>
+                    <p className="pr-4">{job.data[0].attributes.type}</p>
+                    <FaKeyboard  className="mx-2 h-4 w-4" color="#23C9FF"/>
 
-                    {job.data[0].attributes.category.data.attributes.name}
+                    <p className="pr-4"> {job.data[0].attributes.category.data.attributes.name} </p>
+                    <GiReceiveMoney  className="mx-2 h-4 w-4"  color="#23C9FF"/>
+                    {job.data[0].attributes.pay ? job.data[0].attributes.pay : "TBD"}
                   </div>
                 
                 

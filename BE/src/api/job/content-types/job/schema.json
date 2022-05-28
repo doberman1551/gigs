@@ -52,6 +52,18 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "jobs"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "pay": {
+      "type": "string"
+    },
+    "applicatonLink": {
+      "type": "string"
     }
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/Link'
 
 const BottomJobCard = () => {
   return (
@@ -10,13 +11,14 @@ const BottomJobCard = () => {
      
             <h1 className="title-font sm:text-2xl text-xl font-medium text-neutral-100 mb-3">Post a Free Gig</h1>
             <p className="leading-relaxed mb-3">Post your gig or job for free. Open to everybody in the community </p>
-            <a className="text-primary inline-flex items-center">Learn More
+            <Link href="/jobs/pricing">
+            <a className="text-primary inline-flex items-center hover:underline">Learn More
               <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
               </svg>
             </a>
-          
+        </Link>
           </div>
         </div>
         <div className="p-4 lg:w-1/3">
@@ -24,16 +26,18 @@ const BottomJobCard = () => {
         
             <h1 className="title-font sm:text-2xl text-xl font-medium text-neutral-100 mb-3">Featured Gig</h1>
             <p className="leading-relaxed mb-3">Post a featured job or gig. Benefit from better placement and promotion.You will also support the project</p>
-            <a className="text-primary inline-flex items-center">Learn More
+          <Link href="/jobs/pricing">
+            <a className="text-primary inline-flex items-center hover:underline">Learn More
               <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
              
               </svg>
-
+             
              
     	    
             </a>
+            </Link>
       
             <div class="w-12 h-12 rounded-full bg-neutral-100 opacity-50  absolute top-1"></div>
     	    
