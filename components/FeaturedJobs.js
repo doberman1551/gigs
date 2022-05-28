@@ -77,7 +77,7 @@ const FeaturedJobs = ({job}) => {
         />
       </svg>
 
-      <span class="text-xs font-medium sm:text-xs">Featured</span>
+      <span className="text-xs font-medium sm:text-xs">Featured</span>
     </strong>
     </div>  )}
 

@@ -39,7 +39,7 @@ const BottomJobCard = () => {
             </a>
             </Link>
       
-            <div class="w-12 h-12 rounded-full bg-neutral-100 opacity-50  absolute top-1"></div>
+            <div className="w-12 h-12 rounded-full bg-neutral-100 opacity-50  absolute top-1"></div>
     	    
           </div>
         </div>
