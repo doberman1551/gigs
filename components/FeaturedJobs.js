@@ -5,7 +5,7 @@ const FeaturedJobs = ({job}) => {
   
   return (
 <div
-  className="relative  pr-3 px-3 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
+  className="relative pl-2 pr-3 pt-2 pb-4 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
     
 
 
@@ -40,27 +40,27 @@ const FeaturedJobs = ({job}) => {
   </Link>
   
 
-  <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
-      <div class="w-full">
+  <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
+      <div className="w-full">
                         <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
-                        <p tabIndex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
+                        <p tabIndex="0" class="focus:outline-none text-sm text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
 
                         
                         </div>
-                        <div class="w-full">
-                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 pt-1 ">Category</p>
-                        <p tabIndex="0" class="focus:outline-none text-base  text-neutral-400 mt-3 md:mt-5"> {job.attributes.category.data.attributes.name} </p>
+                        <div className="w-full">
+                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500  ">Category</p>
+                        <p tabIndex="0" class="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1"> {job.attributes.category.data.attributes.name} </p>
                         </div>
                         
                                           
                             </div>
     
-                            {job.attributes.featured&& (
+     {job.attributes.featured&& (
         
                          
-  <div className="absolute top-0 right-0">
+  <div classname="relative top-0 right-0">
                             <strong
-      class=" mb-4 inline-flex items-center gap-1 rounded-tl-xl rounded-br-xl py-1 px-3 text-primary bg-graybg "
+      className="  top-0 right-0 absolute px-1 inline-flex items-center gap-1 rounded-tl-xl rounded-br-xl py-0  text-primary bg-graybg "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

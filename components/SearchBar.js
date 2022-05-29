@@ -10,13 +10,13 @@ const SearchBar = () => {
     setTerm("")
   }
   return (
-<section className="bg-background h-50 p-8 flex items-center justify-center rounded-xl">
+<section className="bg-background h-50 p-8 flex items-center justify-start rounded-xl">
 
 
-<form onSubmit={handleSubmit} className="w-full my-8">
+<form onSubmit={handleSubmit} className="w-full my-8 md:max-w-5xl ">
                         <div className="relative flex p-1 rounded-full bg-graybg border border-graybg shadow-md md:p-2 md:h-16 text-black">
                            
-                            <input value={term}  onChange={(e)=>setTerm(e.target.value)}  placeholder="What you are good at?" class="w-full p-4 rounded-full" type="text"/>
+                            <input value={term}  onChange={(e)=>setTerm(e.target.value)}  placeholder="What you are good at?" class="w-full p-4 rounded-full" type="text" />
                             <button type="submit"  title="Start buying" className="ml-auto py-3 px-6 rounded-full text-center transition bg-primary focus:from-red-400 md:px-12">
                                 <span className="hidden text-white font-semibold md:block">
                                     Search

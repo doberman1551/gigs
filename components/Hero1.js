@@ -5,7 +5,7 @@ const Hero1 = () => {
   return  (
     <div>
  
-        <div class="container px-6 py-16 pb-2 mx-auto mb-16">
+        <div className="container px-6 py-16 pb-2 mx-auto mb-16">
             <div className="items-center lg:flex">
                 <div className="w-full lg:w-1/2">
                     <div className="lg:max-w-lg">

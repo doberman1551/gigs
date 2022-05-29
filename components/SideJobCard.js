@@ -3,7 +3,7 @@ import Image from 'next/image';
 const SideJobCard = () => {
   return(
     
-  <div className="relative p-1 pb-8 rounded-xl group w-80% sm:h-96 sm:w-96 bg-graybg bg-opacity-50 shadow-xl hover:rounded-2xl my-16 md:my-0 ">
+  <div className="relative pb-8 rounded-xl group w-80% sm:h-96 sm:w-96 bg-graybg bg-opacity-50 shadow-xl hover:rounded-2xl my-16 md:my-0 ">
           <div className="relative">
             <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-64 bg-graybg"></div>
             <Image src="/images/nftcareersocial.avif"  width={1000} height={667} className="h-64 w-full object-cover object-top rounded-t-lg transition duration-500 group-hover:rounded-t-xl"/>
