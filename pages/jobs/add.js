@@ -1,6 +1,6 @@
 import React from 'react'
 
-const add = () => {
+const AddJob = () => {
   return (
     <section className=" py-16 bg-background">
     <div>
@@ -100,4 +100,4 @@ const add = () => {
   )
 }
 
-export default add
+export default AddJob

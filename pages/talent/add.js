@@ -1,6 +1,6 @@
 import React from 'react'
 
-const add = () => {
+const AddTalent = () => {
   return (
     <div className='bg-graybg text-white'>
 <iframe
@@ -16,4 +16,4 @@ const add = () => {
   )
 }
 
-export default add
+export default AddTalent
