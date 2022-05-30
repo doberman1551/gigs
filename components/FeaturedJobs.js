@@ -49,7 +49,7 @@ const FeaturedJobs = ({job}) => {
                         </div>
                         <div className="w-full">
                         <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500  ">Category</p>
-                        <p tabIndex="0" class="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1"> {job.attributes.category.data.attributes.name} </p>
+                        <p tabIndex="0" class="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1">{/*{job.attributes.category.data.attributes.name} */} </p>
                         </div>
                         
                                           
