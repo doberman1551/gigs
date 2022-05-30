@@ -42,14 +42,14 @@ const FeaturedJobs = ({job}) => {
 
   <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
       <div className="w-full">
-                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
-                        <p tabIndex="0" class="focus:outline-none text-sm text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
+                        <p tabIndex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
+                        <p tabIndex="0" className="focus:outline-none text-sm text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
 
                         
                         </div>
                         <div className="w-full">
-                        <p tabIndex="0" class="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500  ">Category</p>
-                        <p tabIndex="0" class="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1">{/*{job.attributes.category.data.attributes.name} */} </p>
+                        <p tabIndex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500  ">Category</p>
+                        <p tabIndex="0" className="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1">{/*{job.attributes.category.data.attributes.name} */} </p>
                         </div>
                         
                                           
@@ -68,11 +68,11 @@ const FeaturedJobs = ({job}) => {
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        stroke-width="2"
+        strokeWidth="2"
       >
         <path
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
         />
       </svg>

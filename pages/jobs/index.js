@@ -31,7 +31,7 @@ const lastPage=Math.ceil(totalPerPage/PER_PAGE)
 
         {page>1&& (
       <Link href={`/jobs?page=${page-1}`}>
-      <button class="bg-secondary hover:bg-secondary text-white font-bold py-2 px-4 rounded-xl">
+      <button className="bg-secondary hover:bg-secondary text-white font-bold py-2 px-4 rounded-xl">
   Prev
 </button>
       </Link>
@@ -39,7 +39,7 @@ const lastPage=Math.ceil(totalPerPage/PER_PAGE)
 
     {page< lastPage && (
       <Link href={`/jobs?page=${page+1}`}>
-      <button class="bg-primary hover:bg-secondary ml-2 text-white font-bold py-2 px-4 rounded-xl">
+      <button className="bg-primary hover:bg-secondary ml-2 text-white font-bold py-2 px-4 rounded-xl">
   Next
 </button>
       </Link>

@@ -30,7 +30,7 @@ if(categoryValue){
 }
 
 
-export default function filter({jobs,categories}) {
+export default function Filter({jobs,categories}) {
 
   console.log(jobs)
   const queryClient=useQueryClient()

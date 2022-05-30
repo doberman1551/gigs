@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 const Hero = () => {
-  return<><div class="bg-background">
-  <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+  return<><div className="bg-background">
+  <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
       <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-white font-black leading-7 md:leading-10">
               Talent Platform for the NFT and Metaverse World

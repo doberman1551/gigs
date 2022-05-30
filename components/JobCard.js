@@ -23,20 +23,20 @@ const JobCard = () => {
         />
       <div>
       <p className="pt-4 font-semibold text-base" > {job.attributes.positionTitle}</p>
-      <p class="text-neutral-500">{job.attributes.companyProject}</p>
+      <p className="text-neutral-500">{job.attributes.companyProject}</p>
       </div>
       </div>
       </Link>
-      <div class="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
-      <div class="w-full">
+      <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
+      <div className="w-full">
                         <p tabindex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
                         <p tabindex="0" className="focus:outline-none text-base  text-white mt-3 md:mt-5"> {job.attributes.type}</p>
 
                         
                         </div>
-                        <div class="w-full">
-                        <p tabindex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Category</p>
-                        <p tabindex="0" className="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category.data.attributes.name}</p>
+                        <div className="w-full">
+                        <p tabIOndex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Category</p>
+                        <p tabIndex="0" className="focus:outline-none text-base  text-white mt-3 md:mt-5">{job.attributes.category.data.attributes.name}</p>
                         </div>
                         
                             </div>

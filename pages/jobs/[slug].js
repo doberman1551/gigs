@@ -21,7 +21,7 @@ const JobPage = ({job}) => {
       <section className=" py-16 bg-background">
           <div className="container mx-auto px-4 ">
           <Link href="/"className="flex	cursor-pointer">
-          <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/>
              
               </svg>
@@ -129,11 +129,14 @@ const JobPage = ({job}) => {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4  text-neutral-200">
                  
-                   <div className='prose-neutral text-left list-disc'> <ReactMarkdown children=  {job.data[0].attributes.description} /> </div>
+                   <div className='prose-neutral text-left list-disc'> 
+                   <ReactMarkdown> 
+                   {job.data[0].attributes.description}
+                   </ReactMarkdown>
+                   </div>
                       
                    
                   
-                     
              
 
                    <div className="py-6 px-3 mt-32 sm:mt-0">

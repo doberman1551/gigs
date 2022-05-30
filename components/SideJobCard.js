@@ -15,7 +15,7 @@ const SideJobCard = () => {
           <a href="https://nftcareer.wtf/" className=" inset-x-4 bottom-4 flex items-center space-x-2 py-2 hover:text-primary">
             <div aria-hidden="true" className="h-10 w-10 flex border border-neutral-200 rounded-full hover:border-primary">
               <svg aria-hidden="true" width="24" height="24" fill="none" className="my-auto mx-auto flex-none text-neutral-200">
-                <path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.75 8.75l3.5 3.25-3.5 3.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
               </svg>
             </div>
             <span className="text-neutral-400 hover:text-primary">Read more</span>

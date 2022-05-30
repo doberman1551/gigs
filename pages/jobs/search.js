@@ -23,7 +23,7 @@ export default function Search({jobs}) {
    
     <div className="container mx-auto ">
       <SearchBar/>
-      <h2 className=" align center pl-2 pt-12 font-bold text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl  text-white">Search results for "{router.query.term}"</h2>
+      <h2 className=" align center pl-2 pt-12 font-bold text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl  text-white">Search results for {router.query.term}</h2>
       <div className="container mx-auto md:flex  items-stretch justify-items-center">
       <div>{jobs.data.map((job) => (
       
