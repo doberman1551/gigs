@@ -13,7 +13,7 @@ const BottomJobCard = () => {
             <p className="leading-relaxed mb-3">Post your gig or job for free. Open to everybody in the community </p>
             <Link href="/jobs/pricing">
             <a className="text-primary inline-flex items-center hover:underline">Learn More
-              <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
               </svg>
@@ -28,7 +28,7 @@ const BottomJobCard = () => {
             <p className="leading-relaxed mb-3">Post a featured job or gig. Benefit from better placement and promotion.You will also support the project</p>
           <Link href="/jobs/pricing">
             <a className="text-primary inline-flex items-center hover:underline">Learn More
-              <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
              

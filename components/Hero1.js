@@ -29,7 +29,7 @@ const Hero1 = () => {
                               <div className="text-neutral-100 font-semibold pt-1 hover:bg-primary'>">
                                  <span className="text">Freelancer ?</span>
                                 <Link href="/talent"> 
-                                <p className="font-semibold text-neutral-300 hover:text-primary cursor:pointer ">Register as talent(beta) <svg  className="w-4 h-4 ml-2 inline-block text-primary" viewBox="0 0 24 24" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                                <p className="font-semibold text-neutral-300 hover:text-primary cursor:pointer ">Register as talent(beta) <svg  className="w-4 h-4 ml-2 inline-block text-primary" viewBox="0 0 24 24" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
               </p></Link>
                                  </div>
                          </div>

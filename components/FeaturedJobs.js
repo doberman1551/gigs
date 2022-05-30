@@ -32,7 +32,7 @@ const FeaturedJobs = ({job}) => {
       <h5 className="text-lg font-semibold text-neutral-100">
       {job.attributes.positionTitle}
       </h5>
-      <p class="text-neutral-500">{job.attributes.companyProject}</p>
+      <p className="text-neutral-500">{job.attributes.companyProject}</p>
      
     </div>
   </div>
@@ -58,7 +58,7 @@ const FeaturedJobs = ({job}) => {
      {job.attributes.featured&& (
         
                          
-  <div classname="relative top-0 right-0">
+  <div className="relative top-0 right-0">
                             <strong
       className="  top-0 right-0 absolute px-1 inline-flex items-center gap-1 rounded-tl-xl rounded-br-xl py-0  text-primary bg-graybg "
     >
