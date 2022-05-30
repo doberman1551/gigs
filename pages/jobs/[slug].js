@@ -7,7 +7,7 @@ import { FaBriefcase, FaKeyboard } from 'react-icons/fa';
 import {GiReceiveMoney} from 'react-icons/gi'
 import ReactMarkdown from 'react-markdown'
 import { marked } from 'marked';
-import Link from 'next/dist/client/link'
+import Link from 'next/link'
 
 
 const JobPage = ({job}) => {

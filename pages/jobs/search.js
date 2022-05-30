@@ -9,7 +9,7 @@ import { API_URL } from '../../config'
 import qs from 'qs'
 import { useRouter } from 'next/router'
 import BottomJobCard from '../../components/BottomJobCard'
-import Link from 'next/Link'
+import Link from 'next/link'
 //import styles from '../styles/Home.module.css'
 
 export default function Search({jobs}) {
