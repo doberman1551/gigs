@@ -5,7 +5,7 @@ const FeaturedJobs = ({job}) => {
   
   return (
 <div
-  className="relative pl-2 pr-3 pt-2 pb-4 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
+  className="relative px-2 sm:pl-2 sm:pr-3 pt-2 pb-4 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
     
 
 
@@ -29,10 +29,10 @@ const FeaturedJobs = ({job}) => {
           height={58}
         />
      <div>
-      <h5 className="text-lg font-semibold text-neutral-100">
+      <h5 className=" text-sm md:text-lg font-semibold text-neutral-100">
       {job.attributes.positionTitle}
       </h5>
-      <p className="text-neutral-500">{job.attributes.companyProject}</p>
+      <p className="text-sm md:text-lg text-neutral-500">{job.attributes.companyProject}</p>
      
     </div>
   </div>
@@ -40,16 +40,16 @@ const FeaturedJobs = ({job}) => {
   </Link>
   
 
-  <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 px-4 py-4 xl:px-10 gap-y-8 gap-x-12 2xl:gap-x-28">
+  <div className="grid grid-cols-1 content-end mt-4 md:grid-cols-1 lg:grid-cols-2  px-4 py-4 xl:px-10 gap-y-8 gap-x-8 2xl:gap-x-28">
       <div className="w-full">
-                        <p tabIndex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500 ">Type</p>
-                        <p tabIndex="0" className="focus:outline-none text-sm text-neutral-400 mt-3 md:mt-5"> {job.attributes.type}</p>
+                        <p tabIndex="0" className=" focus:outline-none text-sm md:text-base font-medium leading-none text-gray-500 ">Type</p>
+                        <p tabIndex="0" className=" focus:outline-none text-sm md:text-base text-neutral-400 mt-2 md:mt-2"> {job.attributes.type}</p>
 
                         
                         </div>
                         <div className="w-full">
-                        <p tabIndex="0" className="focus:outline-none text-xs md:text-sm font-medium leading-none text-gray-500  ">Category</p>
-                        <p tabIndex="0" className="focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1">{/*{job.attributes.category.data.attributes.name} */} </p>
+                        <p tabIndex="0" className=" hidden md:block md:focus:outline-none text-xs md:text-base font-medium leading-none text-gray-500  ">Category</p>
+                        <p tabIndex="0" className=" hidden  md:block focus:outline-none text-sm  text-neutral-400 mt-3 md:mt-5 pr-1">{/*{job.attributes.category.data.attributes.name} */} </p>
                         </div>
                         
                                           
@@ -60,7 +60,7 @@ const FeaturedJobs = ({job}) => {
                          
   <div className="relative top-0 right-0">
                             <strong
-      className="  top-0 right-0 absolute px-1 inline-flex items-center gap-1 rounded-tl-xl rounded-br-xl py-0  text-primary bg-graybg "
+      className=" -right-3  -top-16  sm:-right-1 sm:-top-14  absolute px-1 inline-flex items-center gap-0 rounded-tl-xl rounded-br-xl py-0  text-primary bg-graybg "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const FeaturedJobs = ({job}) => {
         />
       </svg>
 
-      <span className="text-xs font-medium sm:text-xs">Featured</span>
+      <span className="text-[10px] font-medium sm:text-xs pr-1">Featured</span>
     </strong>
     </div>  )}
 
