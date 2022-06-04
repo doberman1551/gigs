@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-const pricing = () => {
+import axios from 'axios'
+import { checkout } from '../../lib/checkout'
+const Pricing = () => {
+
+   
   return (
                                  
 
@@ -78,7 +82,16 @@ const pricing = () => {
                             <span>Faster Review</span>
                         </li>
                     </ul>
-                    <button type="submit" title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-primary hover:bg-secondary active:bg-cyan-700 focus:bg-sky-500">
+                    <button type="submit" onClick={(() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: "price_1L70x8I2MVPPUp40PKyOabKp",
+                    quantity: 1
+                  }
+                ]
+              })
+            })} title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-primary hover:bg-secondary active:bg-cyan-700 focus:bg-sky-500">
                         <span className="text-white font-semibold">
                            Post a Gig
                         </span>
@@ -88,10 +101,73 @@ const pricing = () => {
 
           
         </div>
+
+        <div className="space-y-4 mt-24">
+            <h3 className="text-3xl font-bold py-4">FAQ</h3>
+  <details className="p-6 border-l-4 border-secondary bg-graybg group " open>
+    <summary className="flex items-center justify-between cursor-pointer">
+      <h5 className="text-lg font-medium text-neutral-200">
+        How do I purchase Premium placement?
+      </h5>
+
+      <span
+        className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p className="mt-4 leading-relaxed text-neutral-300">
+      You could purchase credits via stripe link and fill in your Payment ID in the gig posting form
+    </p>
+  </details>
+
+  <details className="p-6 border-l-4 border-secondary bg-graybg group">
+    <summary className="flex items-center justify-between cursor-pointer">
+      <h5 className="text-lg font-medium text-neutral-200">
+      Why there is a review?
+      </h5>
+
+      <span
+        className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p className="mt-4 leading-relaxed text-neutral-300">
+     There have been scammers impersonating projects and posting gigs trying to scam people. Thats why we need to do simple verification.
+    </p>
+  </details>
+</div>
+
+
     </div>
 </div>
                                 
   )
 }
 
-export default pricing
+export default Pricing
