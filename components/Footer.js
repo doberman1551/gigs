@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
  
       <div>
-      <a  href="https://nftcareer.wtf/" target="_blank" >
+      <a  href="https://nftcareer.wtf/" target="_blank" rel="noreferrer" >
       <p className="font-medium text-neutral-400 hover:opacity-75">
 Resources        </p>
       </a>
