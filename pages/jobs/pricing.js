@@ -129,7 +129,7 @@ const Pricing = () => {
     </summary>
 
     <p className="mt-4 leading-relaxed text-neutral-300">
-      You could purchase credits via stripe link and fill in your Payment ID in the gig posting form
+      You could purchase credits via the Stripe link and fill in your Payment ID in the gig posting form.
     </p>
   </details>
 
@@ -158,7 +158,7 @@ const Pricing = () => {
     </summary>
 
     <p className="mt-4 leading-relaxed text-neutral-300">
-     There have been scammers impersonating projects and posting gigs trying to scam people. Thats why we need to do simple verification.
+     There have been scammers impersonating projects and posting gigs trying to scam people. Thats why we need to do simple verification. 
     </p>
   </details>
 </div>
