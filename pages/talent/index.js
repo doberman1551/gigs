@@ -18,8 +18,9 @@ const index = () => {
   
           <a
             className="inline-flex items-center px-8 py-3 mt-8 text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary hover:border-primary active:text-indigo-500 focus:outline-none focus:ring"
-            href="/get-started"
-          >
+            href="https://tally.so/r/waQNDX">
+          
+          
             <span className="text-sm font-medium"> Get Started </span>
   
             <svg
