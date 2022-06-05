@@ -1,5 +1,5 @@
 import React from 'react'
-import BottomJobCard from '../../components/BottomJobCard'
+import Link from 'next/link'
 
 const index = () => {
   return (
@@ -55,8 +55,8 @@ const index = () => {
   
             <h6 className="mt-2 font-bold">Register</h6>
   
-            <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-400 sm:block">
-Fill the form and list your skils and desired opps            </p>
+            <p className="hidden sm:mt-1 sm:text-sm sm:text-gray-200 sm:block">
+              Fill the form and list your skils and desired opps            </p>
           </a>
   
           <a
@@ -149,68 +149,46 @@ Fill the form and list your skils and desired opps            </p>
         </div>
       </div>
 
+
+      
+
       </div>
 
       
-<div clasName="relative py-16 bg-transparent ">  
-    <div clasName="relative container m-auto px-6 text-neutral-200 md:px-12">
-        <div clasName="grid lg:grid-cols-2 gap-6 md:w-8/12 md:mx-auto lg:w-full">
-            <div clasName="group bg-transparent rounded-xl px-8 py-12 space-y-6 text-center">
-             
-                <h3 clasName="text-2xl font-semibold text-neutral-100">For Service Providers</h3>
-                <p>Save time in prospecting by having some opportunities offered directly.No cost involved</p>
-
-                <a href="#" clasName="relative flex justify-center items-center h-10 w-10 mx-auto 
-                                   before:absolute before:inset-0 before:border before:border-graybg before:rounded-full before:transition before:duration-300 group-hover:before:scale-125">
-                    <span clasName="text-primary">
-
-                    <svg
-              clasNameName="w-5 h-5"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-
-                    </span>
+      <div className="relative py-24 bg-background">  
+    <div className="relative container m-auto px-6 text-neutral-200 md:px-12">
+        <div className="grid lg:grid-cols-2 gap-8 md:w-8/12 md:mx-auto lg:w-full">
+            <div className="group bg-transparent rounded-xl  px-8 py-12 space-y-6 text-center">
+              
+                <h3 className="text-2xl font-semibold text-white">For Service Providers</h3>
+                <p>Save time in prospecting by having some opportunities to apply offered to you directly.No cost involved.</p>
+                <a href="https://tally.so/r/waQNDX" className="relative flex justify-center items-center h-10 w-10 mx-auto 
+                                   before:absolute before:inset-0 before:border before:rounded-full before:transition before:duration-300 group-hover:before:scale-125">
+                    <span className="text-primary">
+                    <svg  className="w-4 h-4  inline-block text-primary" viewBox="0 0 24 24" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+   
+            </span>
                 </a>
             </div>
-            <div clasName="group  rounded-xl px-8 py-12 space-y-6 text-center">
-              
-                <h3 clasName="text-2xl font-semibold text-neutral-100  ">For Projects/Companies </h3>
+            <div className="group bg-transparent rounded-xl px-8 py-12 space-y-6 text-center">
+               
+                <h3 className="text-2xl font-semibold text-white">For Projects/Companies </h3>
                 <p>Post your gig/job requirements and get talent profiles to choose from directly.Available only with <strong>premium </strong> gig postings.</p>
-                
-                <a href="#" clasName="relative flex justify-center items-center h-10 w-10 mx-auto 
-                                   before:absolute before:inset-0 before:border before:border-graybg before:rounded-full before:transition before:duration-300 group-hover:before:scale-125 shadow-sm">
-                    <span clasName="text-primary flex justify-center">
-
-                    <svg
-              clasNameName="w-5 h-5 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
+                <Link href="/jobs/pricing">
+                <a href="#" className="relative flex justify-center items-center h-10 w-10 mx-auto 
+                                   before:absolute before:inset-0 before:border before:rounded-full before:transition before:duration-300 group-hover:before:scale-125 ">
+                    <span className="text-primary">
+                    <svg  className="w-4 h-4  inline-block text-primary" viewBox="0 0 24 24" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+   
 
                     </span>
+
+
+                
                 </a>
+                </Link>
             </div>
           
-
         </div>
     </div>
 </div>
