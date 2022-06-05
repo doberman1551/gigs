@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import axios from 'axios'
-import { checkout } from '../../lib/checkout'
+
 const Pricing = () => {
 
    
@@ -82,20 +81,13 @@ const Pricing = () => {
                             <span>Faster Review</span>
                         </li>
                     </ul>
-                    <button type="submit" onClick={(() => {
-              checkout({
-                lineItems: [
-                  {
-                    price: "price_1L70x8I2MVPPUp40PKyOabKp",
-                    quantity: 1
-                  }
-                ]
-              })
-            })} title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-primary hover:bg-secondary active:bg-cyan-700 focus:bg-sky-500">
+                    <a href="https://buy.stripe.com/test_cN28zZ0wvacQaAwdQQ">
+                    <button type="submit" title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-primary hover:bg-secondary active:bg-cyan-700 focus:bg-sky-500">
                         <span className="text-white font-semibold">
                            Post a Gig
                         </span>
                     </button>
+                    </a>
                 </div>
             </div>
 
