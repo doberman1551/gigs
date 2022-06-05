@@ -3,7 +3,7 @@ import BottomJobCard from '../../components/BottomJobCard'
 
 const index = () => {
   return (
-    <section clasName="bg-background pt-4">
+    <section className="bg-background pt-4">
     <div className="max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
       <div
         className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-16 lg:items-center"
