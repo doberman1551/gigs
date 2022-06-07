@@ -140,13 +140,15 @@ const JobPage = ({job}) => {
              
 
                    <div className="py-6 px-3 mt-32 sm:mt-0">
-                      <button
+                     <a href={job.data[0].attributes.applicatonLink}
+                     ><button
                         className="bg-primary active:bg-primary uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
                         type="button"
                         style={{ transition: "all .15s ease" }}
                       >
                         Apply
                       </button>
+                      </a>
                     </div>
                     <p> Find the gig useful and consider applying? Mention that we have sent you, so that we could reach more people and more people post jobs here :)</p>
                      
