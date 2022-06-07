@@ -118,7 +118,7 @@ const JobPage = ({job}) => {
                     <FaBriefcase   className="mx-2 h-4 w-4"  color="#23C9FF"/>
                     <p className="pr-4">{job.data[0].attributes.type}</p>
                     <FaKeyboard  className="mx-2 h-4 w-4" color="#23C9FF"/>
-
+                    {job.data[0].attributes.category.data.attributes.name} 
                     <GiReceiveMoney  className="mx-2 h-4 w-4"  color="#23C9FF"/>
                     {job.data[0].attributes.pay ? job.data[0].attributes.pay : "TBD"}
                   </div>
