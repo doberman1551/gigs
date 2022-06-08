@@ -20,6 +20,7 @@ export default function Home({jobs}) {
         <meta name="description" content="NFT jobs and gigs" />
         <meta name="robots" content="noindex,nofollow" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="https://automatic-social-images.vercel.app/Test%20Message.jpeg" />
       </Head>
       <section className="bg-background">
       <Hero1/>
