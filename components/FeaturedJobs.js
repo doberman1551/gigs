@@ -5,7 +5,7 @@ const FeaturedJobs = ({job}) => {
   
   return (
 <div
-  className="relative sm:pl-2 sm:pr-3 pt-2 pb-4 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
+  className="relative pr-2 sm:pl-2 sm:pr-3 pt-2 pb-4 overflow-hidden bg-graybg rounded-lg my-6 mx-6  flex justify-center items-center  ">
     
 
 

@@ -29,9 +29,9 @@ export default function Home({jobs}) {
       </div>
       <div className="container mx-auto  " id="middle">
       <SearchBar/>
-      <h2 className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl pl-4 text-white md:ml-24">Latest Gigs</h2>
-      <div className="container mx-auto md:flex  items-stretch justify-evenly">
-        <div className="-ml-4">
+      <h2 className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl pl-4 text-white ">Latest Gigs</h2>
+      <div className="grid  grid-cols-1 md:grid-cols-5 ">
+        <div className="col-span-3">
       <div>{jobs.data.map((job) => (
       
         <FeaturedJobs key={job.id} job={job}  />
