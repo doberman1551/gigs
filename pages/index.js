@@ -20,7 +20,7 @@ export default function Home({jobs}) {
         <meta name="description" content="NFT jobs and gigs" />
         <meta name="robots" content="noindex,nofollow" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="https://automatic-social-images.vercel.app/Test%20Message.jpeg" />
+        <meta property="og:image" content="/images/nftGigsSocialImage.png" />
       </Head>
       <section className="bg-background">
       <Hero1/>
@@ -31,7 +31,7 @@ export default function Home({jobs}) {
       <SearchBar/>
       <h2 className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl pl-4 text-white md:ml-24">Latest Gigs</h2>
       <div className="container mx-auto md:flex  items-stretch justify-evenly">
-        <div>
+        <div className="-ml-4">
       <div>{jobs.data.map((job) => (
       
         <FeaturedJobs key={job.id} job={job}  />
