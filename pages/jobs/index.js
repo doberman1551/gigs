@@ -5,6 +5,7 @@ import SearchBar from '../../components/SearchBar'
 import SideJobCard from '../../components/SideJobCard'
 import Link from 'next/link'
 import { API_URL } from '../../config'
+import BottomJobCard from '../../components/BottomJobCard'
 const PER_PAGE=5
 const index = ({jobs, total, page}) => {
   const totalPerPage=total.data.length
@@ -20,8 +21,8 @@ const lastPage=Math.ceil(totalPerPage/PER_PAGE)
       <SearchBar/>
       </div>
 
-      <div className="container mx-auto md:flex  items-stretch justify-between">
-      <div>{jobs.data.map((job) => (
+      <div className="grid  grid-cols-1 md:grid-cols-5">
+      <div className="col-span-3">{jobs.data.map((job) => (
       
         <FeaturedJobs key={job.id} job={job}  />
     ))}
@@ -46,7 +47,8 @@ const lastPage=Math.ceil(totalPerPage/PER_PAGE)
       )}
 
     </div>
-    
+       
+   <BottomJobCard/>
    
     </div>
   )
