@@ -132,9 +132,10 @@ const JobPage = ({job}) => {
                     <div className="w-full lg:w-9/12 px-4  text-neutral-200">
                  
                    <div className='prose-neutral text-left list-disc'> 
-                   <ReactMarkdown children=  {job.data[0].attributes.description} remarkPlugins={[remarkGfm]}/>
+                   <ReactMarkdown  remarkPlugins={[remarkGfm]}>
                
-            
+                   {job.data[0].attributes.description}
+                   </ReactMarkdown>
                    </div>
                       
                    
