@@ -8,6 +8,7 @@ import {GiReceiveMoney} from 'react-icons/gi'
 import ReactMarkdown from 'react-markdown'
 import { marked } from 'marked';
 import Link from 'next/link'
+import remarkGfm from 'remark-gfm'
 
 
 const JobPage = ({job}) => {
@@ -19,15 +20,16 @@ const JobPage = ({job}) => {
     <>
       <main className="bg-background">
       <section className=" py-16 bg-background">
-          <div className="container mx-auto px-4 ">
-          <Link href="/"className="flex	cursor-pointer">
+          <div className="container mx-auto px-4  ">
+         <div className="cursor-pointer inline-flex hover:opacity-75 items-center">
+        
           <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/>
-             
               </svg>
+              <Link href="/" className="	cursor-pointer">
+              <p className='ml-2'>All Jobs  </p>
               </Link>
-              <p>all Jobs  </p>
-         
+              </div>
             <div className=" flex flex-col min-w-0 break-words bg-graybg w-full mb-6 shadow-xl rounded-lg mt-8  ">
               <div className="px-6">
                 <div className="flex flex-wrap justify-center">
@@ -130,9 +132,9 @@ const JobPage = ({job}) => {
                     <div className="w-full lg:w-9/12 px-4  text-neutral-200">
                  
                    <div className='prose-neutral text-left list-disc'> 
-                   <ReactMarkdown> 
-                   {job.data[0].attributes.description}
-                   </ReactMarkdown>
+                   <ReactMarkdown children=  {job.data[0].attributes.description} remarkPlugins={[remarkGfm]}/>
+               
+            
                    </div>
                       
                    

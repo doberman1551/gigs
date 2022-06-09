@@ -65,7 +65,7 @@ export default function Home({jobs}) {
 }
 export async function getServerSideProps() {
 
-  const jobRes = await fetch(`${API_URL}/jobs?populate=*&sort=featured:desc&sort=publishedAt:desc`)
+  const jobRes = await fetch(`${API_URL}/jobs?populate=*&sort=featured:asc&sort=publishedAt:desc`)
   const jobs=await jobRes.json()
 
 return{

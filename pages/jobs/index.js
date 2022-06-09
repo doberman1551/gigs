@@ -62,7 +62,7 @@ export async function getServerSideProps({query:{page=1}}) {
     const totalRes = await fetch(`${API_URL}/jobs`)
     const total=await totalRes.json()
     //Fetch jobs and gigs
-    const jobRes = await fetch(`${API_URL}/jobs?populate=*&sort=featured:desc&sort=publishedAt:desc&pagination[limit]=${PER_PAGE}&pagination[start]=${start}`)
+    const jobRes = await fetch(`${API_URL}/jobs?populate=*&sort=featured:asc&sort=publishedAt:desc&pagination[limit]=${PER_PAGE}&pagination[start]=${start}`)
     const jobs=await jobRes.json()
   
   return{
