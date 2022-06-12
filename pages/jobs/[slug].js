@@ -153,7 +153,7 @@ const JobPage = ({job}) => {
                       </button>
                       </a>
                     </div>
-                    <p> Find the gig useful and consider applying? Mention that we have sent you, so that we could reach more people and more people post jobs here :)</p>
+                    <p className="text-sm italic"> Find the gig useful and consider applying? Mention that we have sent you, so that we could reach more people and more people post jobs here :)</p>
                      
                     </div>
                   </div>

@@ -6,7 +6,7 @@ import SideJobCard from '../../components/SideJobCard'
 import Link from 'next/link'
 import { API_URL } from '../../config'
 import BottomJobCard from '../../components/BottomJobCard'
-const PER_PAGE=5
+const PER_PAGE=10
 const index = ({jobs, total, page}) => {
   const totalPerPage=total.data.length
 const lastPage=Math.ceil(totalPerPage/PER_PAGE)
