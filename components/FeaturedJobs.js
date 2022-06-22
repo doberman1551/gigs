@@ -41,15 +41,15 @@ const FeaturedJobs = ({job}) => {
   
 
   <div className="grid grid-cols-1 content-end mt-4 md:grid-cols-1 lg:grid-cols-2  px-4 py-4 xl:px-10 gap-y-8 gap-x-8 2xl:gap-x-28">
-      <div className="w-full">
+      <div className="w-full ml-1">
                         <p tabIndex="0" className=" focus:outline-none text-sm md:text-base font-medium leading-none text-gray-500 ">Type</p>
                         <p tabIndex="0" className=" focus:outline-none text-sm md:text-base text-neutral-400 mt-2 md:mt-2"> {job.attributes.type}</p>
 
                         
                         </div>
-                        <div className="w-full content-center">
+                        <div className="w-full text-center">
                         <p tabIndex="0" className=" hidden md:block md:focus:outline-none text-xs md:text-base font-medium leading-none text-gray-500  ">Category</p>
-                        <p tabIndex="0" className="  hidden  md:block focus:outline-none md:text-base  text-neutral-400 mt-2 md:mt-2 pr-1">{job.attributes.category.data.attributes.name} </p>
+                        <p tabIndex="1" className="  hidden  md:block focus:outline-none md:text-base   text-neutral-400 mt-2 md:mt-2 pr-1">{job.attributes.category.data.attributes.name} </p>
                         </div>
                         
                                           

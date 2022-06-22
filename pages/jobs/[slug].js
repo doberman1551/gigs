@@ -15,7 +15,8 @@ const JobPage = ({job}) => {
     const router = useRouter()
     console.log(job)
     console.log(job[0])
-    const jobinput= job.data[0].attributes.description
+    const jobDate= new Date(job.data[0].attributes.createdAt).toLocaleDateString("en-US")
+    console.log(jobDate)
   return (
     <>
       <main className="bg-background">
@@ -121,7 +122,7 @@ const JobPage = ({job}) => {
                     <p className="pr-4">{job.data[0].attributes.type}</p>
                     <FaKeyboard  className="mx-2 h-4 w-4" color="#23C9FF"/>
                     {job.data[0].attributes.category.data.attributes.name} 
-                    <GiReceiveMoney  className="mx-2 h-4 w-4"  color="#23C9FF"/>
+                    <GiReceiveMoney  className="ml-3 mr-1 h-4 w-4"  color="#23C9FF"/>
                     {job.data[0].attributes.pay ? job.data[0].attributes.pay : "TBD"}
                   </div>
                 

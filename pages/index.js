@@ -18,7 +18,7 @@ export default function Home({jobs}) {
       <Head>
         <title>NFT Gigs</title>
         <meta name="description" content="NFT jobs and gigs" />
-        <meta name="robots" content="noindex,nofollow" />
+       
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content="/images/nftGigsSocialImage.png" />
       </Head>
