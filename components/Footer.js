@@ -22,7 +22,7 @@ const Footer = () => {
           </svg>
         </a>
  
-        <a className="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+        <a className="hover:opacity-75" href="https://twitter.com/nftgigs" target="_blank" rel="noreferrer">
           <span className="sr-only"> Twitter </span>
  
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

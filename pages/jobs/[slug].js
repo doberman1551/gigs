@@ -59,6 +59,7 @@ const JobPage = ({job}) => {
                   <div className="w-full lg:w-4/12 px-4  lg:order-3 lg:text-right lg:self-center">
                  
                     <div className=" flex justify-center py-2 px-3 mt-4  sm:mt-0">
+                    <a href={job.data[0].attributes.applicatonLink}>
                       <button
                         className="bg-primary active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
                         type="button"
@@ -66,6 +67,7 @@ const JobPage = ({job}) => {
                       >
                         Apply
                       </button>
+                      </a>
                    </div>
                   
                   
