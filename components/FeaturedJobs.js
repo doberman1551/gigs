@@ -19,7 +19,7 @@ const FeaturedJobs = ({job}) => {
 <Link href={`/jobs/${job.attributes.slug}`}> 
   <div className='w-full flex justify-items-start space-x-4 relative cursor-pointer'>
  
-  <Image className="rounded-xl object-scale-down"
+  <Image className="rounded-xl object-scale-down ml-1"
           src={
             job.attributes.logo
               ? job.attributes.logo.data.attributes.formats.thumbnail.url
