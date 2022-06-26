@@ -40,11 +40,13 @@ const Pricing = () => {
                             <span>Normal review time</span>
                         </li>
                     </ul>
+                    <a href="https://airtable.com/shrE2i1RJtp2gVPR7">
                     <button type="submit" title="Submit" className="block w-full py-3 px-6 text-center rounded-xl transition bg-primary hover:bg-secondary active:bg-cyan-700 focus:bg-sky-500">
                         <span className="text-white font-semibold">
                             Post a Gig
                         </span>
                     </button>
+                    </a>
                 </div>
             </div>
 
