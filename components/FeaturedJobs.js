@@ -42,13 +42,12 @@ const FeaturedJobs = ({job}) => {
 
   <div className="grid grid-cols-1 content-center  justify-end mt-4 md:grid-cols-1 lg:grid-cols-2 px-4 pb-4 md:pt-1  pt-6 mb-2 xl:px-10 gap-y-8 gap-x-8 2xl:gap-x-32 ">
       <div className="w-full ml-1">
-                       
-                        <p tabIndex="0" className=" focus:outline-none text-sm md:text-base font-medium leading-none text-neutral-300 ">Type</p>
-                      
+                        <div className="flex justify-center">
+                          <p tabIndex="0" className=" focus:outline-none text-sm md:text-base font-medium leading-none text-neutral-300 ">Type</p>
+                        </div>
                         
                         <div className="flex justify-center">
-
-                        <p tabIndex="0" className=" focus:outline-none text-sm md:text-base text-neutral-400 mt-2 md:mt-2"> {job.attributes.type}</p>
+                          <p tabIndex="0" className=" focus:outline-none text-sm md:text-base text-neutral-400 mt-2 md:mt-2"> {job.attributes.type}</p>
                         </div>
                         
                         </div>
