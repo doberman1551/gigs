@@ -40,7 +40,7 @@ const FeaturedJobs = ({job}) => {
   </Link>
   
 
-  <div className="grid grid-cols-1 content-center  justify-end mt-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 px-4 pb-4 md:pt-1  pt-6 mb-2 xl:px-10 gap-y-8  gap-x-8 2xl:gap-x-36 ">
+  <div className="grid grid-cols-1 content-center  justify-end mt-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 px-4 pb-4 md:pt-1  pt-6 mb-2 xl:px-10 gap-y-8  gap-x-8 2xl:gap-x-32 ">
       <div className="w-full ml-1">
                         <div className="flex justify-center">
                           <p tabIndex="0" className=" focus:outline-none text-sm md:text-base font-medium leading-none text-neutral-300 ">Type</p>
@@ -51,7 +51,7 @@ const FeaturedJobs = ({job}) => {
                         </div>
                         
                         </div>
-                        <div className="w-full ">
+                        <div className="w-full 2xl:ml-2">
                         <div className="flex justify-center">
                         <p tabIndex="0" className=" hidden md:block md:focus:outline-none text-xs md:text-base font-medium leading-none text-neutral-300  ">Category</p>
                         </div>
