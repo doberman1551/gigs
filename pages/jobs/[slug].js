@@ -130,11 +130,15 @@ const JobPage = ({job}) => {
                 
                 
                 </div>
-                <div className="mt-10 py-10 border-t border-gray-300 text-center">
+                <div className="mt-10 py-2 border-t border-gray-300 text-center">
+               
                   <div className="flex flex-wrap justify-center">
-                    <div className="w-full lg:w-9/12 px-4  text-neutral-200">
                  
+                    <div className="w-full lg:w-9/12 px-4  text-neutral-200">
+                    <p className="text-sm text-left pb-8 text-neutral-400"> Posted:{jobDate}</p>
+                  
                    <div className='prose-neutral text-left list-disc'> 
+                  
                    <ReactMarkdown  remarkPlugins={[remarkGfm]}>
                
                    {job.data[0].attributes.description}

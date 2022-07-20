@@ -33,6 +33,7 @@ if(categoryValue){
 export default function Filter({jobs,categories}) {
 
   console.log(jobs)
+  console.log(categories)
   const queryClient=useQueryClient()
   const [categoryValue, setCategoryValue]=useState(null)
   const {data,status}=useQuery(['jobs',{category:categoryValue}],getJobs)
@@ -59,13 +60,16 @@ export default function Filter({jobs,categories}) {
       <div className="container mx-auto w-full md:max-w-7xl">
       <SearchBar/>
       
-      <div className="text-black"><Select
-               
-                options={options} 
+      <div className="text-black">
+        
+        <Select
+               getOptionLabel={option=>`${option.name}`}
+                options={categories} 
+                getOptionValue={option=>option.id}
                 instanceID="categories"
                 isMulti
                 placeholder="Filter by Category"
-                onChange={values=>setCategoryValue(values)}
+                onChange={values=>handleCategories()}
                 />
       
       </div>
