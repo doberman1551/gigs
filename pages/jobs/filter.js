@@ -11,41 +11,55 @@ import { API_URL } from '../../config'
 import Select from 'react-select'
 import { useQuery, useQueryClient } from 'react-query'
 import { useState } from 'react'
+import { useEffect } from 'react'
 //import styles from '../styles/Home.module.css'
-const getJobs=async(key)=>{
-    console.log(key)
-    const categoryValue=key.queryKey[1].category[0].value
-    console.log(categoryValue)
-
-if(categoryValue){
-    const res=await fetch(`${API_URL}/jobs?filters[$and][0][category][name][$contains]=${categoryValue}`)
-   console.log(res)
-    return res.json()
-   
-}
-
-
-    const res = await fetch(`${API_URL}/jobs?populate=*&sort=featured:desc&sort=publishedAt:desc`)
-    return res.json()
-}
 
 
 export default function Filter({jobs,categories}) {
 
+
+
+  const fetchCategory=async(key)=>{
+    console.log(key)
+    const res= await fetch(`${API_URL}/jobs?populate=*?filters[category][$eq]=${categoryValue}`)
+    return res.json()
+  }
+
+
+
+
   console.log(jobs)
   console.log(categories)
-  const queryClient=useQueryClient()
-  const [categoryValue, setCategoryValue]=useState(null)
-  const {data,status}=useQuery(['jobs',{category:categoryValue}],getJobs)
+
   
-  const options= [
-    { value: 'Developer', label: 'Developer' },
-    { value: 'Community', label: 'Community' },
-    { value: 'vanilla', label: 'Vanilla' }
-  ]
+  let options=[]
+
+  for (var i = 0; i < categories.data.length; ++i) {
+    options.push({"value": categories.data[i].attributes.name,"label": categories.data[i].attributes.name,"id":categories.data[i].id})
+  }
+  console.log(options)
+
+
+  // Use Query Setuo--------------------------------------------------
+  const [categoryValue, setCategoryValue]=useState(null)
+  const [categoryID, setCategoryID]=useState(null)
+  const queryClient=useQueryClient()
+  const {data, status}=useQuery(['category',categoryValue],fetchCategory, {initialData:jobs})
+
+console.log (categoryID)
+  
   const handleCategories=(values)=>{
+    
+      setCategoryValue(values)
+     
       console.log(values)
   }
+
+ 
+
+
+
+
   return (
     <div>
       <Head>
@@ -55,7 +69,8 @@ export default function Filter({jobs,categories}) {
       </Head>
       <Navbar></Navbar>
       <section className="bg-background">
-    
+     
+
       <Hero/>
       <div className="container mx-auto w-full md:max-w-7xl">
       <SearchBar/>
@@ -63,13 +78,14 @@ export default function Filter({jobs,categories}) {
       <div className="text-black">
         
         <Select
-               getOptionLabel={option=>`${option.name}`}
-                options={categories} 
-                getOptionValue={option=>option.id}
+               
+                options={options} 
+               getOptionLabel={options=>options.label}
+                getOptionValue={options=options.id}
                 instanceID="categories"
                 isMulti
                 placeholder="Filter by Category"
-                onChange={values=>handleCategories()}
+                onChange={value=>setCategoryID(value.id)}
                 />
       
       </div>
@@ -78,9 +94,8 @@ export default function Filter({jobs,categories}) {
       <h2 className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl  text-white">Featured Gigs</h2>
       <div className="container mx-auto md:flex  items-stretch justify-between">
       <div>
-          {status==='loading' &&<div> I am loading</div>}
-          {status==='error'&& <div>Something went wrong</div>}
-          {status==='success'&& data.data.map((job) => (
+      
+        { data.data.map((job) => (
       
         <FeaturedJobs key={job.id} job={job} />
     ))}
