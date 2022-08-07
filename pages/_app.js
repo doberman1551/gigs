@@ -6,11 +6,18 @@ import Footer from '../components/Footer';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config'
 import Navbar from '../components/Navbar';
+import { hotjar } from 'react-hotjar'
+import { useEffect } from 'react'
 
 const queryClient=new QueryClient
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    hotjar.initialize(2918076, 6)
+  }, [])
+
   return (
   <>
   <DefaultSeo {...SEO}/>

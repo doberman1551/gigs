@@ -3,6 +3,7 @@ import Image from 'next/image'
 import BottomJobCard from '../components/BottomJobCard'
 import FeaturedJobs from '../components/FeaturedJobs'
 import Hero1 from '../components/Hero1'
+import Hero3d from '../components/Hero3d'
 import JobCard from '../components/JobCard'
 import Navbar from '../components/Navbar'
 import SearchBar from '../components/SearchBar'
@@ -23,7 +24,7 @@ export default function Home({jobs}) {
         <meta property="og:image" content="/images/nftGigsSocialImage.png" />
       </Head>
       <section className="bg-background">
-      <Hero1/>
+       <Hero1/>
       <div className="container flex justify-evenly  ">
      
       </div>
