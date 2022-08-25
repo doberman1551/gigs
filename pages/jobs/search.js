@@ -54,12 +54,12 @@ export async function getServerSideProps({query:{term}}) {
         filters: {
             
           description: {
-            $containsi:term,
+            $contains:term,
           },
          
         
         positionTitle: {
-            $containsi:term }
+            $contains:term }
      } })
  
         const jobRes = await fetch(`${API_URL}/jobs?${query}&populate=*`)
